@@ -1,0 +1,7 @@
+<form method="post" action="{{ path('performance_delete', {'id': performance.id}) }}" onsubmit="return confirm('Voulez-vous vraiment supprimmer cet élément?');">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ performance.id) }}">
+    <div class="center-input">
+        <button class="btn btn-danger">supprimmer</button>
+    </div>
+</form>

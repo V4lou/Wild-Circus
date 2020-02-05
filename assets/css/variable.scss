@@ -1,0 +1,60 @@
+$titleColor: #F7230C;
+$textColor : #0B1616;
+
+$titleFont : 'Oleo Script', cursive;
+$textFont : 'Lato', sans-serif;
+
+$titleH3Size : 2.5em;
+
+/* styles généraux*/
+
+.h1-admin {
+    text-align: center;
+    margin: 1em;
+    color: $titleColor;
+    font-family: $titleFont;
+}
+
+button {
+    color: $textColor;
+    font-family: $textFont;
+}
+
+.center-buttom-new-admin {
+    text-align: center;
+}
+
+.box-button-return {
+    margin-top: 1em;
+}
+
+.link-return-admin {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.box-form-admin {
+    text-align: center;
+}
+div > label {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: $textColor;
+    font-family: $textFont;
+}
+
+.align-button-action-admin {
+    margin-top: 1.5em;
+}
+
+.center-input {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.alert-success {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

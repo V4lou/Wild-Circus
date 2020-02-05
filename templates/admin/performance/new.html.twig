@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une performance{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Ajouter une performance</h1>
+
+    {{ include('admin/performance/_form.html.twig') }}
+
+    <a href="{{ path('performance_index') }}"><button class="btn btn-secondary link-return-admin">Retour à l'administration des performances</button></a>
+{% endblock %}

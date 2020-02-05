@@ -1,0 +1,32 @@
+.index-performance {
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.title-performance {
+    font-size: 1.5em;
+    color: $textColor;
+    font-family: $titleFont;
+}
+
+#performance_description {
+    width: 300px;
+    height: 150px;
+    border: 2px solid $textColor;
+    color: $textColor;
+    font-family: $textFont;
+}
+
+#performance_picture {
+    border: 2px solid $textColor;
+    color: $textColor;
+    font-family: $textFont;
+}
+
+#performance_title {
+    border: 2px solid $textColor;
+    color: $textColor;
+    font-family: $textFont;
+}

@@ -1,0 +1,106 @@
+.website-title {
+    color: $titleColor;
+    font-size: 2.8em;
+    font-family: $titleFont;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.website-subtitle {
+    color: $textColor;
+    font-family: $textFont;
+    font-size: 0.9em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.box-navbar-wild {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.navbar-wild {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.link-navbar-wild {
+    color: $textColor;
+    font-family: $textFont;
+    font-size: 1.2em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $textColor;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $textColor;
+}
+
+.box-footer {
+   background-color: $textColor;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.box-footer > .txt-footer {
+    color: white;
+    font-family: $textFont;
+    font-size: 1em;
+}
+.box-footer > small {
+    color: white;
+    font-family: $textFont;
+    font-size: 0.8em;
+}
+
+.link-admin-footer {
+    color: white;
+    font-family: $textFont;
+    font-size: 1em;
+}
+
+.link-admin-footer:hover {
+    color: white;
+}
+
+.link-footer-admin {
+    text-align: right;
+    margin-right: 1em;
+}
+
+.img-carousel {
+    max-height: 600px;
+}
+
+.carousel-caption > h5 {
+    color: white;
+    font-family: $textFont;
+    font-size: 1.6em;
+}
+
+.box-home-element {
+    margin-top: 2em;
+}
+
+.title-home {
+    color: $titleColor;
+    font-family: $titleFont;
+    font-size: $titleH3Size;
+    text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.txt-qsn-home {
+    color: $textColor;
+    font-family: $textFont;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1em;
+}

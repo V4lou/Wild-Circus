@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration des performances{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Administrer les performances</h1>
+    <div class="center-buttom-new-admin">
+        <a href="{{ path('performance_new') }}"><button type="button" class="btn btn-success">Créer une nouvelle performance</button></a>
+    </div>
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+        {% for performance in performances %}
+            <div class="card index-performance">
+                <div class="card-body box-perfo">
+                    <h5 class="card-title title-performance">{{ performance.title }}</h5>
+                    <a href="{{ path('performance_edit', {'id': performance.id}) }}" class="card-link"><button type="button" class="btn btn-secondary">Modifier</button></a>
+                </div>
+            </div>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+    <div class="box-button-return">
+        <a href="#" class="link-return-admin"><button type="button" class="btn btn-secondary">Retour à l'administration générale</button></a>
+    </div>
+{% endblock %}

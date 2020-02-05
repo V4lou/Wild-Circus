@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editer une performance{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Editer une performance</h1>
+
+    {{ include('admin/performance/_form.html.twig', {'button_label': 'modifier'}) }}
+
+    {{ include('admin/performance/_delete_form.html.twig') }}
+
+    <a href="{{ path('performance_index') }}"><button class="btn btn-secondary link-return-admin">Retour à l'administration des performances</button></a>
+
+
+{% endblock %}
