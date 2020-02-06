@@ -94,6 +94,10 @@ class PerformanceController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($performance);
             $entityManager->flush();
+            $this->addFlash(
+                'notice',
+                'La performance a bien été supprimée'
+            );
         }
 
         return $this->redirectToRoute('performance_index');

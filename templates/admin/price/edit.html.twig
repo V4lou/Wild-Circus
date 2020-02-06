@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editer un tarif{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Editer un tarif</h1>
+
+    {{ include('admin/price/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    <a href="{{ path('price_index') }}"><button class="btn btn-secondary link-return-admin">Retour à l'administration des tarifs</button></a>
+
+    {{ include('admin/price/_delete_form.html.twig') }}
+{% endblock %}
