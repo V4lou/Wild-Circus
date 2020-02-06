@@ -6,6 +6,8 @@ use App\Entity\Performance;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichFileType;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class PerformanceType extends AbstractType
 {
@@ -14,7 +16,8 @@ class PerformanceType extends AbstractType
         $builder
             ->add('title')
             ->add('description')
-            ->add('image')
+            ->add('imageFile', VichImageType::class, ['label' => 'Image', 'required' => false,
+                'download_uri' => false])
         ;
     }
 
