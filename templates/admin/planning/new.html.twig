@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer un horaire{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Créer un horaire</h1>
+
+    {{ include('admin/planning/_form.html.twig') }}
+
+    <a href="{{ path('planning_index') }}"><button class="btn btn-secondary link-return-admin">Retour à l'administration des tarifs</button></a>
+{% endblock %}

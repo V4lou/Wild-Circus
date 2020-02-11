@@ -22,7 +22,7 @@ class Price
     private $price_type;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="decimal", scale=2)
      */
     private $price;
 

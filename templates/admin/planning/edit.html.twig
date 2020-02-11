@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editer un horaire{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Editer un horaire</h1>
+
+    {{ include('admin/planning/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+    {{ include('admin/planning/_delete_form.html.twig') }}
+    <a href="{{ path('planning_index') }}"><button class="btn btn-secondary link-return-admin">Retour à l'administration des tarifs</button></a>
+
+
+{% endblock %}

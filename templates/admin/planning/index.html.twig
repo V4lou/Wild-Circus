@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+{% block title %}Administration des horaires{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin">Administrer les horaires</h1>
+    <div class="center-buttom-new-admin">
+        <a href="{{ path('planning_new') }}"><button type="button" class="btn btn-success">Créer un horaire</button></a>
+    </div>
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    {% for planning in plannings %}
+        <div class="card index-performance">
+            <div class="card-body box-perfo">
+                <h5 class="card-title title-performance">{{ planning.title }}</h5>
+                <p>{{ planning.infodate|date("d/m/Y : H:i", "Europe/Paris") }}</p>
+                <a href="{{ path('planning_edit', {'id': planning.id}) }}" class="card-link"><button type="button" class="btn btn-secondary">Modifier</button></a>
+            </div>
+        </div>
+    {% else %}
+        <tr>
+            <td colspan="5">no records found</td>
+        </tr>
+    {% endfor %}
+    <div class="box-button-return">
+        <a href="#" class="link-return-admin"><button type="button" class="btn btn-secondary">Retour à l'administration générale</button></a>
+    </div>
+{% endblock %}
