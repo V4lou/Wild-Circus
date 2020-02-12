@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Exception;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PlanningRepository")
@@ -18,6 +20,9 @@ class Planning
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(
+     *     max = 255,
+     *     maxMessage="Le titre ne doit pas dépasser {{ limit }} caractères")
      */
     private $title;
 

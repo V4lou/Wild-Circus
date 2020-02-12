@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Exception;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PriceRepository")
@@ -18,11 +20,17 @@ class Price
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(
+     *     max = 255,
+     *     maxMessage="Le type de prix ne doit pas dépasser {{ limit }} caractères.")
      */
     private $price_type;
 
     /**
      * @ORM\Column(type="decimal", scale=2)
+     * @Assert\Positive(
+     *message="La valeur du prix doit-être positive")
+     *
      */
     private $price;
 
