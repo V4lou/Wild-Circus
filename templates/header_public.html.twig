@@ -7,10 +7,10 @@
         </button>
         <div class="collapse navbar-collapse navbar-wild" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link link-navbar-wild" href="#">Accueil</a>
-                <a class="nav-item nav-link link-navbar-wild" href="#">Performances</a>
-                <a class="nav-item nav-link link-navbar-wild" href="#">Dates</a>
-                <a class="nav-item nav-link link-navbar-wild" href="#">Tarifs</a>
+                <a class="nav-item nav-link link-navbar-wild" href="{{ path('wild_circus_index') }}">Accueil</a>
+                <a class="nav-item nav-link link-navbar-wild" href="{{ path('wild_circus_performance') }}">Performances</a>
+                <a class="nav-item nav-link link-navbar-wild" href="{{ path('wild_circus_date') }}">Dates</a>
+                <a class="nav-item nav-link link-navbar-wild" href="{{ path('wild_circus_tarif') }}">Tarifs</a>
             </div>
         </div>
     </nav>

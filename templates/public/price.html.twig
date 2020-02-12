@@ -1,0 +1,16 @@
+{% extends 'layout_public.html.twig' %}
+{% block title %}Wild Circus - Tarifs{% endblock %}
+{% block body %}
+    <h1 class="h1-title-public">Tarifs</h1>
+    <div class="box-img-top-tarif-public">
+        <img src="{{asset('build/img-p-tarif.jpg')}}" class="img-top-tarif-public" alt="candy">
+    </div>
+    <div class="box-content-dates-public">
+    {% for tarif in tarifs %}
+        <div class="box-display-date-public">
+            <p class="txt-p-date-public">{{ tarif.priceType }}</p>
+            <p class="txt-p-date-public">{{ tarif.price }} €</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

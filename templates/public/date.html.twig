@@ -1,0 +1,16 @@
+{% extends 'layout_public.html.twig' %}
+{% block title %}Wild Circus - Dates{% endblock %}
+{% block body %}
+    <h1 class="h1-title-public">Prochaines dates</h1>
+    <div class="box-img-top-date-public">
+        <img src="{{asset('build/img-p-date.jpg')}}" class="img-top-date-public" alt="Popcorn">
+    </div>
+    <div class="box-content-dates-public">
+        {% for date in dates %}
+            <div class="box-display-date-public">
+                <p class="txt-p-date-public">Le {{ date.infodate|date("d/m/Y : H:i", "Europe/Paris") }}</p>
+                <p class="txt-p-date-public">{{ date.location }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

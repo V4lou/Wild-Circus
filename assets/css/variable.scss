@@ -53,3 +53,11 @@ div > label {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+.h1-title-public {
+    color: $titleColor;
+    font-family: $titleFont;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
