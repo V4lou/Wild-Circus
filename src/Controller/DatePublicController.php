@@ -16,7 +16,7 @@ class DatePublicController extends  AbstractController
      */
     public function index(PlanningRepository $planningRepository) :Response
 {
-    $dates = $planningRepository->findAll();
+    $dates = $planningRepository->findby([], ['infodate' => 'ASC']);
     return $this->render('public/date.html.twig', [
         'dates' => $dates,
     ]);
