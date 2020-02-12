@@ -104,3 +104,56 @@
     text-align: center;
     margin: 1em;
 }
+
+.box-element-perf-home {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.card-perf-home {
+    max-width: 18rem;
+    margin: 1em;
+}
+
+.title-perf-card-home {
+    color: $textColor;
+    font-family: $textFont;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.txt-perf-card-home {
+    color: $textColor;
+    font-family: $textFont;
+    font-size: 1em;
+}
+
+.button-more-perf-home {
+    margin-top: 1em;
+    color: white;
+    font-family: $textFont;
+    text-align: center;
+    background-color: $titleColor;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 2px solid $textColor;
+}
+
+.center-button-perf-home {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.box-element-date-home {
+    margin-top: 1em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.box-element-date-home > p {
+    color: $textColor;
+    font-family: $textFont;
+    font-size: 1.2em;
+    font-weight: bold;
+}

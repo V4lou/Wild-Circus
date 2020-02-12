@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Wild Circus - Administration{% endblock %}
+
+{% block body %}
+    <h1 class="h1-admin-home">Administration générale du Wild-Circus</h1>
+    <div class="container">
+        <div class="box-admin-general">
+
+            <div class="card mb-3 box-admin-item">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{ asset('build/performance_admin.jpg') }}" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title admin-item">administrer les performances</h5>
+                            <a href="{{ path('performance_index') }}"><button type="button" class="btn btn-secondary b-admin-item">Administrer</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 box-admin-item" >
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{ asset('build/prix_admin.jpg') }}" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title admin-item">administrer les tarifs</h5>
+                            <a href="{{ path('price_index') }}"><button type="button" class="btn btn-secondary b-admin-item">Administrer</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 box-admin-item" >
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{ asset('build/horaire_admin.jpg') }}" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title admin-item">administrer les horaires</h5>
+                            <a href="{{ path('planning_index') }}"><button type="button" class="btn btn-secondary b-admin-item">Administrer</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

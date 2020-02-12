@@ -46,4 +46,31 @@
             semper. Donec vel lacus facilisis nulla hendrerit porttitor a et augue. In vitae faucibus nibh. Curabitur sagittis ex eu dui vulputate tincidunt. Mauris mi turpis, finibus quis diam eu, finibus convallis augue. Ut sit amet tortor purus. Etiam lacinia ornare augue.
         </p>
     </div>
+    <h3 class="title-home">Quelques spectacles</h3>
+    <div class="box-element-perf-home">
+        {% for performance in performances %}
+            <div class="card card-perf-home">
+                {% if  performance.image is not null %}
+                <img src="{{ vich_uploader_asset(performance, 'imageFile') }}" class="card-img-top" alt="{{ performance.title }}">
+                {% else %}
+                    <img src="{{asset('build/placeholder.jpg')}}" class="card-img-top" alt="{{ performance.title }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title title-perf-card-home">{{ performance.title }}</h5>
+                    <p class="card-text txt-perf-card-home">{{ performance.description }}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <div class="center-button-perf-home">
+        <a href="#"><button class="button-more-perf-home">Voir plus de spectacles...</button></a>
+    </div>
+    <h3 class="title-home">Prochaine date</h3>
+    <div class="box-element-date-home">
+        {% for date in dates %}
+        <p class="date-date-home">Le {{ date.infodate|date("d/m/Y : H:i", "Europe/Paris") }}</p>
+        <p class="date-location-home">{{ date.location }}</p>
+        {% endfor %}
+    </div>
 {% endblock %}

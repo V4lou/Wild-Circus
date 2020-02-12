@@ -1,0 +1,27 @@
+.h1-admin-home {
+    text-align: center;
+    margin-top: 1em;
+    color: $titleColor;
+    font-family: $titleFont;
+    font-size: 2.5em;
+}
+
+.box-admin-general {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.box-admin-item {
+    max-width: 540px;
+    margin-top: 1em;
+    display: block;
+    vertical-align: middle;
+}
+
+.admin-item {
+    font-family: $textFont;
+    color: $textColor;
+}
