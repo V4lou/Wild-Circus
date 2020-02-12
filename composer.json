@@ -30,6 +30,7 @@
         "vich/uploader-bundle": "^1.13"
     },
     "require-dev": {
+        "fzaninotto/faker": "^1.9",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
