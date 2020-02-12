@@ -19,7 +19,7 @@ class HomeController extends  AbstractController
     public function index(PerformanceRepository $performanceRepository, PlanningRepository $planningRepository) :Response
 {
     $performances = $performanceRepository->findBy([], ['title' => 'ASC'], 3);
-    $dates = $planningRepository->findBy([],['infodate' => 'DESC'], 1);
+    $dates = $planningRepository->findBy([],['infodate' => 'ASC'], 1);
     return $this->render('public/home.html.twig', [
         'performances' => $performances,
         'dates' => $dates,
